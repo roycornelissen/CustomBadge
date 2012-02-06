@@ -12,54 +12,54 @@ This was created with the following code:
     
     CustomBadgeView c1 = new CustomBadgeView ("2")
     {
-    TextColor = UIColor.White,
-    BadgeColor = UIColor.Red,
-    Border = true,
-    BorderColor = UIColor.White,
-    ScaleFactor = 1f,
-    Shining = true
+        TextColor = UIColor.White,
+        BadgeColor = UIColor.Red,
+        Border = true,
+        BorderColor = UIColor.White,
+        ScaleFactor = 1f,
+        Shining = true
     };
     
     CustomBadgeView c2 = new CustomBadgeView ("CustomBadge")
     {
-    TextColor = UIColor.Black,
-    BadgeColor = UIColor.Green,
-    BorderColor = UIColor.Yellow,
-    ScaleFactor = 1.5f
+        TextColor = UIColor.Black,
+        BadgeColor = UIColor.Green,
+        BorderColor = UIColor.Yellow,
+        ScaleFactor = 1.5f
     };
     
     CustomBadgeView c3 = new CustomBadgeView ("Now Retina Ready!")
     {
-    BadgeColor = UIColor.Blue,
-    ScaleFactor = 1.5f
+        BadgeColor = UIColor.Blue,
+        ScaleFactor = 1.5f
     };
     
     CustomBadgeView c4 = new CustomBadgeView ("… and scalable")
     {
-    BadgeColor = UIColor.Purple,
-    BorderColor = UIColor.Black,
-    ScaleFactor = 2.0f
+        BadgeColor = UIColor.Purple,
+        BorderColor = UIColor.Black,
+        ScaleFactor = 2.0f
     };
     
     CustomBadgeView c5 = new CustomBadgeView ("… with Shining")
     {
-    TextColor = UIColor.Black,
-    BadgeColor = UIColor.Orange,
-    BorderColor = UIColor.Black
+        TextColor = UIColor.Black,
+        BadgeColor = UIColor.Orange,
+        BorderColor = UIColor.Black
     };
     
     CustomBadgeView c6 = new CustomBadgeView ("… without Shining")
     {
-    BadgeColor = UIColor.Brown,
-    BorderColor = UIColor.Black,
-    Shining = false
+        BadgeColor = UIColor.Brown,
+        BorderColor = UIColor.Black,
+        Shining = false
     };
     
     CustomBadgeView c7 = new CustomBadgeView ("Still Open & Free")
     {
-    BadgeColor = UIColor.Black,
-    BorderColor = UIColor.Yellow,
-    ScaleFactor = 1.25f
+        BadgeColor = UIColor.Black,
+        BorderColor = UIColor.Yellow,
+        ScaleFactor = 1.25f
     };
     
     // Positions
