@@ -8,8 +8,8 @@ namespace CustomBadge.Sample
 	{
 		public override void ViewDidLoad ()
 		{
-			this.View.BackgroundColor = UIColor.LightGray;
 			base.ViewDidLoad ();
+			this.View.BackgroundColor = UIColor.LightGray;
 			
 			CustomBadgeView c1 = new CustomBadgeView ("2")
 			{
