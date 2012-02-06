@@ -59,7 +59,7 @@ namespace CustomBadge
 			set {
 				if (textColor != value) {
 					textColor = value;
-					Redraw ();
+					Redraw (false);
 				}
 			}
 		}
@@ -71,7 +71,7 @@ namespace CustomBadge
 			set {
 				if (badgeColor != value) {
 					badgeColor = value;
-					Redraw ();
+					Redraw (false);
 				}
 			}
 		}
@@ -83,7 +83,7 @@ namespace CustomBadge
 			set {
 				if (borderColor != value) {
 					borderColor = value;
-					Redraw ();
+					Redraw (false);
 				}
 			}
 		}
@@ -95,7 +95,7 @@ namespace CustomBadge
 			set {
 				if (border != value) {
 					border = value;
-					Redraw ();
+					Redraw (false);
 				}
 			}
 		}
@@ -107,7 +107,7 @@ namespace CustomBadge
 			set {
 				if (shining != value) {
 					shining = value;
-					Redraw ();
+					Redraw (false);
 				}
 			}
 		}
