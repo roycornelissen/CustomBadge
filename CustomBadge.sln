@@ -1,0 +1,36 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomBadge", "CustomBadge\CustomBadge.csproj", "{E506BF31-D84C-4C38-9FA4-684228012F40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomBadge.Sample", "CustomBadge.Sample\CustomBadge.Sample.csproj", "{9EBAC98A-69E6-47BA-80E1-DF9572E02268}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EBAC98A-69E6-47BA-80E1-DF9572E02268}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{9EBAC98A-69E6-47BA-80E1-DF9572E02268}.Debug|iPhone.Build.0 = Debug|iPhone
+		{9EBAC98A-69E6-47BA-80E1-DF9572E02268}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{9EBAC98A-69E6-47BA-80E1-DF9572E02268}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{9EBAC98A-69E6-47BA-80E1-DF9572E02268}.Release|iPhone.ActiveCfg = Release|iPhone
+		{9EBAC98A-69E6-47BA-80E1-DF9572E02268}.Release|iPhone.Build.0 = Release|iPhone
+		{9EBAC98A-69E6-47BA-80E1-DF9572E02268}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{9EBAC98A-69E6-47BA-80E1-DF9572E02268}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{E506BF31-D84C-4C38-9FA4-684228012F40}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E506BF31-D84C-4C38-9FA4-684228012F40}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E506BF31-D84C-4C38-9FA4-684228012F40}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E506BF31-D84C-4C38-9FA4-684228012F40}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E506BF31-D84C-4C38-9FA4-684228012F40}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E506BF31-D84C-4C38-9FA4-684228012F40}.Release|iPhone.Build.0 = Release|iPhone
+		{E506BF31-D84C-4C38-9FA4-684228012F40}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E506BF31-D84C-4C38-9FA4-684228012F40}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = CustomBadge.Sample\CustomBadge.Sample.csproj
+	EndGlobalSection
+EndGlobal
