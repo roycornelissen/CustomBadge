@@ -242,8 +242,19 @@ namespace CustomBadge
 			var maxY = MakePath (context, rect);
 			context.Clip ();
 			
-			var locations = new float[] { 0.0f, 0.5f };
-			var components = new float[] { 0.92f, 0.92f, 0.92f, 1.0f, 0.82f, 0.82f, 0.82f, 0.4f };
+			/*var locations = new float[] { 0.0f, 0.5f };
+			var components = new float[] { 0.92f, 0.92f, 0.92f, 1.0f, 0.82f, 0.82f, 0.82f, 0.4f };*/
+			
+			var locations = new float[] { 0f, 0.4f, 0.5f, 0.5f, 0.6f, 1.0f };
+			var colors = new UIColor[] { 
+				UIColor.FromWhiteAlpha (1.0f, 0.885f),
+				UIColor.FromWhiteAlpha (1.0f, 0.45f),
+				UIColor.FromWhiteAlpha (1.0f, 0.23f),
+				UIColor.FromWhiteAlpha (1.0f, 0.10f),
+				UIColor.FromRGBA (0f, 0f, 0f, 0.13f),
+				UIColor.FromRGBA (0f, 0f, 0f, 0.13f)
+			};
+			var components = GetComponents (colors);
 			
 			var darkLoc = new float[] { 0.5f, 1.0f };
 			var darkComp = new float[] { 0.08f, 0.08f, 0.08f, 0.6f, 0.18f, 0.18f, 0.18f, 0.2f };
@@ -258,6 +269,16 @@ namespace CustomBadge
 			}
 			
 			context.RestoreState ();
+		}
+		
+		private float[] GetComponents (UIColor[] colors)
+		{
+			var ret = new float[colors.Length * 4];
+			for (int i = 0; i < colors.Length; i++) {
+				var f = i * 4;
+				colors [i].GetRGBA (out ret [f], out ret [f + 1], out ret [f + 2], out ret [f + 3]);
+			}
+			return ret;
 		}
 		
 		private void DrawBorder (CGContext context, RectangleF rect)

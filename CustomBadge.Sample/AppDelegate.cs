@@ -31,7 +31,7 @@ namespace CustomBadge.Sample
 			var vc = new CustomBadgeViewController ();
 			
 			// If you have defined a view, add it here:
-			 window.AddSubview (vc.View);
+			window.AddSubview (vc.View);
 			
 			// make the window visible
 			window.MakeKeyAndVisible ();
