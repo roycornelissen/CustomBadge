@@ -3,7 +3,7 @@ CustomBadge
 
 CustomBadge allows you to produce custom badges in monotouch. It's a single UIView subclass providing all the
 functionallity required to create badges of different sizes and colors. CustomBadge is more or less a direct
-port of the original project found [here](http://www.spaulus.com/2011/04/custombadge-2-0-retina-ready-scalable-light-reflex/?lang=en "CustomBadge 2.0").
+port of the original CustomBadge project. [CustomBadge](http://www.spaulus.com/2011/04/custombadge-2-0-retina-ready-scalable-light-reflex/?lang=en "CustomBadge 2.0") (c) Sascha Marc Paulus [http://www.spaulus.com](http://www.spaulus.com "Spaulus.com").
 
 ![screenshot](http://i.imgur.com/en9cx.png "Sample")
 
