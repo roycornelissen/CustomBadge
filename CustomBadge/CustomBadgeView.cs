@@ -17,6 +17,13 @@ namespace CustomBadge
 		private bool autoResize;
 		private float cornerRoundness;
 		private float scaleFactor;
+		private Alignment alignment;
+
+		public enum Alignment
+		{
+			Left,
+			Right
+		}
 		
 		public CustomBadgeView (string text)
 			: this(text, true) { }
@@ -34,10 +41,12 @@ namespace CustomBadge
 			this.cornerRoundness = 0.4f;
 			this.scaleFactor = 1.0f;
 			this.shining = true;
+			this.alignment = Alignment.Left;
 			this.autoResize = autoResize;
 			if (this.autoResize)
 				this.AutoResizeBadge ();
 			base.UserInteractionEnabled = false;
+
 		}
 		
 		public string Text {
@@ -144,6 +153,26 @@ namespace CustomBadge
 				}
 			}
 		}
+
+		/// <summary>
+		/// Gets or sets the alignment of the badge.
+		/// This will influence in which direction the badge will grow or shrink when the text changes.
+		/// 
+		/// Left: the position stays anchored to the left, badge will grow to the Right
+		/// Right: the position stays anchored to the right, badge will grow to the Left
+		/// </summary>
+		/// <value>The badge alignment.</value>
+		public Alignment BadgeAlignment {
+			get {
+				return alignment;
+			}
+			set {
+				if (alignment != value) {
+					alignment = value;
+					Redraw();
+				}
+			}
+		}
 		
 		private void Redraw (bool autoResize = true)
 		{
@@ -159,6 +188,11 @@ namespace CustomBadge
 			var stringSize = new NSString (this.text).StringSize (UIFont.BoldSystemFontOfSize (12));
 			float flexSpace, rectWidth, rectHeight;
 			var frame = this.Frame;
+
+			var currentTop = frame.Top;
+			var currentLeft = frame.Left;
+			var currentRight = frame.Right;
+
 			if (this.text.Length >= 2) {
 				flexSpace = this.text.Length;
 				rectWidth = 25 + (stringSize.Width + flexSpace);
@@ -169,6 +203,13 @@ namespace CustomBadge
 				frame.Width = 25 * this.scaleFactor;
 				frame.Height = 25 * this.scaleFactor;
 			}
+
+			if (alignment == Alignment.Right) {
+				frame.Location = new PointF(currentRight - frame.Width, currentTop);
+			} else {
+				frame.Location = new PointF(currentLeft, currentTop);
+			}
+
 			this.Frame = frame;
 			this.Redraw (false);
 		}
