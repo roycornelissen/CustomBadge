@@ -26,3 +26,5 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 **/App_Data/Logs
+
+.DS_Store
